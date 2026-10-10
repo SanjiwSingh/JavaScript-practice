@@ -21,7 +21,7 @@
 // console.log(b)
 
 //?let
-// let a 
+// let a
 // a = 10
 // console.log(a)
 
@@ -67,7 +67,7 @@
 // console.log(c)
 // console.log(d)
 
-//?functional 
+//?functional
 // function Demo() {
 //     var x =100
 //     let y = 200
@@ -80,7 +80,6 @@
 // console.log(z)
 
 //Demo
-
 
 //?Hoisting
 // console.log(a) // undifiend
@@ -129,7 +128,6 @@
 // console.log(undefined=="")
 // console.log(null=="")
 
-
 // console.log("2"+2-2)
 // console.log(null==0)
 // console.log(1/0)
@@ -145,3 +143,64 @@
 // console.log(NaN===NaN)
 
 // console.log(typeof typeof typeof NaN)
+
+//? conditional statement
+
+//if(condition)
+
+// if(10>15) console.log("10 is grater")
+
+// let age = 22
+// if(age > 21){
+//   console.log("Eligible for marrriage")
+// } else{
+//     console.log("Not Eligible ... kidooooo")
+// }
+
+//? else if
+
+// let marks = 90
+// if(marks>=90){
+//     console.log("Sabhashhhh..... PROUD")
+// }else if(marks>=75){
+//    console.log("very good")
+// }else if(marks>=55){
+//     console.log("good one")
+// }else if(marks>=35){
+//     console.log("All is welll")
+// }else{
+//     console.log("fail wasted money")
+// }
+
+//?Swith():
+
+// let day = 1;
+// switch (day) {
+//   case 1:
+//     console.log("its moday again .... !!");
+//     break;
+//   case 2:
+//     console.log("its tuesday again .... !!");
+//     break;
+//   case 1:
+//     console.log("its wedesday again .... !!");
+//     break;
+//     default: console.log("bad one")
+// }
+
+
+//? nested if():
+
+// let balance = 400
+// if(balance>0){
+//     console.log("you have money too buy")
+//     if(balance>300){
+//         console.log("I will by biryani for me")
+//     }
+// }else{
+//     console.log("call to papa and cry")
+// }
+
+
+// if("0") console.log("jsp")
+// if([""]) console.log("jsp")
