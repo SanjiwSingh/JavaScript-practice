@@ -204,3 +204,22 @@
 
 // if("0") console.log("jsp")
 // if([""]) console.log("jsp")
+
+
+// ?Looping statement
+
+// for(let i =1; i< 11; i++){
+//     console.log(i)
+// }
+
+// let a =1;
+// while(a<11){
+//     console.log(a)
+//     a++
+// }
+
+// let b = 1;
+// do{
+//     console.log(a)
+//     b++
+// }while(a<1)
