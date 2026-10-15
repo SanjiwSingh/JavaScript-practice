@@ -111,11 +111,49 @@
 // })
 // ()
 
-;
-(()=>{
-  console.log("IIFE using arrow")
-})
-()
+// ;
+// (()=>{
+//   console.log("IIFE using arrow")
+// })
+// ()
 
 
+// ?  HOF : higher order function
+// function accept another function as argument
 
+// function jsp(a) {
+//     console.log("jspiders")
+//     a()
+// }
+// jsp(() => console.log("arrow as arguement"))
+
+// function demo(test){
+//     console.log("demo function")
+//     test()
+// }
+// function test1() {
+//     console.log("test function")
+// }
+// demo(test1)
+
+// function return another function
+
+// function qsp() {
+//     console.log("qsp returns jsp")
+//     return function() {
+//         console.log("function return from qsp")
+//     }
+// }
+// let jsp2 =qsp()
+// jsp2()
+
+//?Nested function
+
+// function outer() {
+//     console.log("outer function")
+//     function inner() {
+//         console.log("inner function")
+//     }
+//     inner()
+// }
+// outer()
