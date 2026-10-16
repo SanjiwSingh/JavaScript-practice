@@ -157,3 +157,34 @@
 //     inner()
 // }
 // outer()
+
+//  var a = 100
+//  let b =200
+//  const c =300
+
+//  console.log(a)
+//  console.log(b)
+//  console.log(c)
+
+// console.log("fuction executing")
+//  function demo(){
+//     console.log("demo call")
+//     console.log("jsp ")
+
+//  }
+//  demo()
+
+//? counter example using closuer
+
+function counter() {
+    let count  = 0
+    return() => {
+        count++
+        console.log(count)
+    }
+
+}
+let incCount = counter()
+incCount()
+incCount()
+incCount()
