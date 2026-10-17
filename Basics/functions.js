@@ -174,17 +174,49 @@
 //  }
 //  demo()
 
+
+// var a =100
+// let b = 200
+// const c = 300
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// function demo(a,b) {
+//     console.log("demo function")
+//     console.log(a+b)
+//     var x = 100
+//     let y = 200
+//     const z = 300
+//     return x+y+z
+// }
+// demo()
+
+// ? Nested function
+console.log("nested function execution")
+function demo() {
+    let name = "JavaScript"
+
+    function test() {
+        console.log(name)
+    }
+    test()
+}
+demo()
+
+
+
 //? counter example using closuer
 
-function counter() {
-    let count  = 0
-    return() => {
-        count++
-        console.log(count)
-    }
+// function counter() {
+//     let count  = 0
+//     return() => {
+//         count++
+//         console.log(count)
+//     }
 
-}
-let incCount = counter()
-incCount()
-incCount()
-incCount()
+// }
+// let incCount = counter()
+// incCount()
+// incCount()
+// incCount()
