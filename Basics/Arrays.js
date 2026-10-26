@@ -27,7 +27,6 @@
 // arr2[0]= 100
 // console.log(arr[2])
 
-
 // ?Method of Array
 
 // ? 1 Mutating methods of array
@@ -37,7 +36,6 @@
 // arr.push(60, 70, 80);
 // console.log(arr); // [10, 20, 30, 40, 50, 60, 70, 80]
 
-
 // 2. pop()
 // let arr2 = [10, 20, 30, 40, 50];
 // arr2.pop(); // removes 50
@@ -45,19 +43,16 @@
 // console.log(arr2); // [10, 20, 30]
 // console.log(arr2.pop()); // 30
 
-
 // 3. unshift()
 // let arr3 = [10, 20, 30, 40, 50];
 // arr3.unshift("java", "javascript", "sql");
 // console.log(arr3); // ["java", "javascript", "sql", 10, 20, 30, 40, 50]
-
 
 // 4. shift()
 // let arr4 = [10, 20, 30, 40, 50];
 // arr4.shift(); // removes 10
 // arr4.shift(); // removes 20
 // console.log(arr4); // [30, 40, 50]
-
 
 // 5. splice()
 // let arr5 = [10, 20, 30, 40, 50];
@@ -72,12 +67,10 @@
 // console.log(arr7.splice(3, 2, 60, 70)); // [40, 50]
 // console.log(arr7); // [10, 20, 30, 60, 70]
 
-
 // 6. reverse()
 // let arr8 = [10, 20, 30, 40, 50];
 // console.log(arr8.reverse()); // [50, 40, 30, 20, 10]
 // console.log(arr8); // [50, 40, 30, 20, 10]
-
 
 // 7. sort() with strings
 // let names = [
@@ -90,7 +83,6 @@
 
 // console.log(names.sort((a, b) => b.localeCompare(a)));
 // ["shanmukha", "rathi", "Rahul", "panda", "mandal", "Lala", "khushi", "kashish", "Bubbli", "bunty"]
-
 
 // 8. sort() with numbers
 // let arr9 = [100, 1, 30, 199, 101, 6, 9, 1000];
@@ -108,27 +100,22 @@
 // console.log(arr10.join(" ")); // "10 20 30 40 50 30"
 // console.log(arr10.join("@")); // "10@20@30@40@50@30"
 
-
 // 2. slice(start, end)
 // console.log(arr10.slice(0, 3)); // [10, 20, 30]
 // console.log(arr10.slice(2)); // [30, 40, 50, 30]
 // console.log(arr10.slice(-2)); // [50, 30]
 
-
 // 3. includes()
 // console.log(arr10.includes(10)); // true
 // console.log(arr10.includes(100)); // false
-
 
 // 4. indexOf()
 // console.log(arr10.indexOf(30)); // 2
 // console.log(arr10.indexOf(300)); // -1
 
-
 // 5. lastIndexOf()
 // console.log(arr10.lastIndexOf(30)); // 5
 // console.log(arr10.lastIndexOf(300)); // -1
-
 
 // 6. at()
 // console.log(arr10.at(0)); // 10
@@ -136,7 +123,6 @@
 // console.log(arr10.at(10)); // undefined
 // console.log(arr10.at(-1)); // 30
 // console.log(arr10.at(-2)); // 50
-
 
 // 7. concat()
 // let arr11 = [100, 200, 300];
@@ -149,7 +135,6 @@
 
 // console.log(arr11.concat(arr10, "js", "html", "java"));
 // [100, 200, 300, 10, 20, 30, 40, 50, 30, "js", "html", "java"]
-
 
 // 8. flat(depth)
 // let nested = [10, 20, [30, 60, [80, 90], 200], 100, 500];
@@ -172,7 +157,6 @@
 // console.log(nested.flat(Infinity));
 // [10, 20, 30, 60, 80, 90, 200, 100, 500]
 
-
 // When you don't know the depth
 // let nested2 = [10, [20, [30], 40], 50];
 
@@ -183,8 +167,6 @@
 // let res = unsorted.toSorted()
 // console.log(res)
 // console.log(unsorted)
-
-
 
 // ? we are javascript students
 // o/p:1 students javascript are we
@@ -200,14 +182,13 @@
 
 // console.log(result)
 
-
 // ? Array Advanced Methods:
-let arr =[10,20,3,30,40,50]
+// let arr =[10,20,3,30,40,50]
 // arr.forEach((e1,i,arr)=> {
 //     console.log(e1)
 //     console.log(i)
 //     console.log(arr)
-    // return e1 // returns undefined
+// return e1 // returns undefined
 // })
 
 //? find():
@@ -218,15 +199,25 @@ let arr =[10,20,3,30,40,50]
 // return first even and odd element of array
 
 // console.log(arr.find((e1) => {
-//     return e1 % 2 === 0 
-    
+//     return e1 % 2 === 0
+
 // }))
 // console.log(arr.find(e1=>e1% 2 === 1))
 
 // ? filter():
-console.log(arr.filter((e1)=> e1>30))
+// console.log(arr.filter((e1)=> e1>30))
+// console.log(arr.filter((e1) => e1>100))
 
-    
+let arr = [
+    10, 0, "jsp", "abcd", "", 20, [],
+    false, null, undefined, {}, () => {},
+    44, 8, 20n
+];
 
+// ? 2. Truthy values
+console.log(arr.filter((el) => el));
+// o/p: [10, "jsp", "abcd", 20, [], {}, () => {}, 44, 8, 20]
 
-
+// ? 3. Falsy values
+console.log(arr.filter((el) => !el));
+// o/p: [0, "", false, null, undefined]
