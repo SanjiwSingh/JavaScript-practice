@@ -208,16 +208,44 @@
 // console.log(arr.filter((e1)=> e1>30))
 // console.log(arr.filter((e1) => e1>100))
 
-let arr = [
-    10, 0, "jsp", "abcd", "", 20, [],
-    false, null, undefined, {}, () => {},
-    44, 8, 20n
-];
+// let arr = [
+//     10, 0, "jsp", "abcd", "", 20, [],
+//     false, null, undefined, {}, () => {},
+//     44, 8, 20n
+// ];
 
 // ? 2. Truthy values
-console.log(arr.filter((el) => el));
+// console.log(arr.filter((el) => el));
 // o/p: [10, "jsp", "abcd", 20, [], {}, () => {}, 44, 8, 20]
 
 // ? 3. Falsy values
-console.log(arr.filter((el) => !el));
+// console.log(arr.filter((el) => !el));
 // o/p: [0, "", false, null, undefined]
+
+//? map(callback)
+
+// let nums = [1,2,3]
+// console.log(nums.map(el=> el*el))
+
+//? some(callback)
+// let even = [2,4,6,8,10,3]
+// console.log(even.some(el=> el%2 == 1) )
+
+//? every(callback)
+// let even = [2,4,6,8,10,3]
+// console.log(even.every(el=> el%2 == 1) )
+
+// console.log([].some(el=>el>10))
+// console.log([].every(el=>el>10))
+
+//? reduce(callback,intialvalue)
+// let nums = [2,2,3]
+// console.log(nums.map(el=> el* el).reduce((acc,el)=> acc+el));
+// console.log(nums.reduce((acc,el) =>acc+(el*el),0))
+
+let values = [1,9,0,9,2,1,3,5,1,0]
+console.log(values.reduce((acc,el)=>{
+    acc[el] = (acc[el] || 0) +1
+    return acc
+
+},{}))
