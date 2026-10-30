@@ -261,3 +261,7 @@ a();
 
 let b = outer();
 b();
+
+// ? Array practise 
+
+//? Q1
