@@ -165,15 +165,35 @@
 
 //? Dynamic behaviour of this keywords:
 
-function test(){
-    console.log(this)
+function test(city,state){
+    console.log(this.name)
+    console.log(this.phono)
+    console.log(city)
+    console.log(state)
 }
-test()
+// test()
 
 let person = {
     name: 'lala',
-    phono: 98789886867
+    phono: 987898869
 }
+let person2 ={
+    name :'Abhi',
+    phono: 3984797597
+}
+
+// ? call()
+// test.call(person, "siwan"," bihar")
+// test.call(person2)
+
+// ? apply()
+// test.apply(person,["siwan","bihar"]);
+
+// ? bind()
+// let b1 = test.bind(person)
+// b1("siwan", 'bihar')
+
+
 
 
 
