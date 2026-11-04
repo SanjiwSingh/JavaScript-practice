@@ -1,7 +1,10 @@
 // ?Question 1: Move all zeros to the end of an array
 // ? [1, 3, 0, 4, 0, 6, 3, 0, 9, 0];
+// let arr = [1, 3, 0, 4, 0, 6, 3, 0, 9, 0];
+// console.log(arr.filter(el => el!==0).concat(arr.filter(el=>el===0)))
 
 
+// ? 2nd approach 
 // let arr = [1, 3, 0, 4, 0, 6, 3, 0, 9, 0];
 // let j = 0;
 
@@ -27,6 +30,10 @@
 //     }
 // }
 // console.log(arr);
+
+//? approach 2
+let arr = [2, 4, 5, 6, 0, 9, 1, 3];
+console.log(arr.map(el => el%2 === 0? el ** 3:el ** 2))
 
 //? Reverse each string in an array
 
@@ -67,10 +74,12 @@
 // console.log(second); // 15
 
 //? Question 6: Remove duplicate elements from an array
-let arr = [1, 3, 2, 4, 3, 5, 1, 6, 2];
+// let arr = [1, 3, 2, 4, 3, 5, 1, 6, 2];
 
-let result = arr.filter((num, index) => {
-    return arr.indexOf(num) === index;
-});
+// let result = arr.filter((num, index) => {
+//     return arr.indexOf(num) === index;
+// });
 
-console.log(result);
+// console.log(result);
+
+//! Arrays of object imp for interview
